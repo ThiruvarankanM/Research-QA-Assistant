@@ -1,5 +1,7 @@
 # Research Q&A Assistant
 
+[Demo Video](https://youtu.be/K5MrnvrVeTI)
+
 An interactive web application for analyzing research papers using AI. Upload PDFs or load arXiv papers, then ask detailed technical questions. Powered by Google Gemini AI and LangChain for advanced language understanding and summarization.
 
 ## Features
@@ -19,10 +21,12 @@ An interactive web application for analyzing research papers using AI. Upload PD
 - **Google Gemini AI** - Natural language processing
 - **arXiv API** - Academic paper retrieval
 - **PyPDF2** - PDF text extraction
+- **Docker & Docker Compose** - Containerized deployment
 
 ## Quick Start
 
-### Setup
+### Setup (Local)
+
 ```bash
 # Install dependencies
 pip install -r requirements.txt
@@ -32,20 +36,43 @@ echo "GOOGLE_API_KEY=your_google_api_key_here" > .env
 
 # Run application
 streamlit run main.py
+````
+
+### Setup (Docker)
+
+The application can also be built and run using Docker and Docker Compose.
+
+```bash
+# Stop and remove running containers
+docker-compose down
+
+# Clean up system images/containers
+docker system prune -a
+
+# Build fresh images without cache
+docker-compose build --no-cache
+
+# Start the application in detached mode
+docker-compose up -d
 ```
+
+Once running, the app will be available at:
+[http://localhost:8501](http://localhost:8501)
 
 ## Usage
 
 ### Loading Papers
-- **arXiv Papers**: Enter comma-separated arXiv IDs in sidebar
-- **PDF Upload**: Upload research paper files directly
-- Click respective load buttons to process and summarize papers
+
+* **arXiv Papers**: Enter comma-separated arXiv IDs in the sidebar
+* **PDF Upload**: Upload research paper files directly
+* Click respective load buttons to process and summarize papers
 
 ### Asking Questions
-- Type technical questions about loaded papers
-- View AI-generated answers with contextual understanding
-- Chat history maintained throughout session
-- Clear history option available without losing papers
+
+* Type technical questions about loaded papers
+* View AI-generated answers with contextual understanding
+* Chat history maintained throughout the session
+* Clear history option available without losing papers
 
 ## Environment Variables
 
@@ -55,12 +82,14 @@ GOOGLE_API_KEY=your_google_api_key_here
 
 ## Use Cases
 
-- Academic research analysis
-- Literature review assistance
-- Technical paper comprehension
-- Research methodology questions
-- Cross-paper comparison queries
+* Academic research analysis
+* Literature review assistance
+* Technical paper comprehension
+* Research methodology questions
+* Cross-paper comparison queries
 
 ## License
 
 MIT License
+
+
