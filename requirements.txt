@@ -1,6 +1,8 @@
-streamlit
-langchain-google-genai
-python-dotenv
-langchain-community
-langchain-core
-PyPDF2
+streamlit==1.49.1
+langchain-google-genai==2.1.10
+python-dotenv==1.1.1
+langchain-community==0.3.29
+PyPDF2==3.0.1
+PyMuPDF==1.26.4
+arxiv==2.2.0
+langchain-core==0.3.75

@@ -1,0 +1,10 @@
+services:
+  research-qa:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+    volumes:
+      - ./uploads:/app/uploads  # For persistent file uploads
+    restart: unless-stopped
