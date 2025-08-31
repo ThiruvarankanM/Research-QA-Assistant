@@ -1,6 +1,10 @@
 # Research Q&A Assistant
 
-[Demo Video](https://youtu.be/K5MrnvrVeTI)
+## Demo
+
+[![Demo Video](https://img.youtube.com/vi/K5MrnvrVeTI/0.jpg)](https://youtu.be/K5MrnvrVeTI)
+
+**[Watch Live Demo](https://youtu.be/K5MrnvrVeTI)**
 
 An interactive web application for analyzing research papers using AI. Upload PDFs or load arXiv papers, then ask detailed technical questions. Powered by Google Gemini AI and LangChain for advanced language understanding and summarization.
 
