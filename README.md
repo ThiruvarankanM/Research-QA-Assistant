@@ -17,6 +17,15 @@ An interactive web application for analyzing research papers using AI. Upload PD
 - Simple Streamlit web interface
 - Maintain loaded papers across chat sessions
 
+  ## Features
+
+- Load multiple research papers using arXiv IDs (comma-separated)
+- Upload custom PDF research papers
+- Automatic paper summarization for quick insights
+- Technical Q&A with conversational chat history
+- Simple Streamlit web interface
+- Maintain loaded papers across chat sessions
+
 ## Tech Stack
 
 - **Python 3.8+** - Core development
